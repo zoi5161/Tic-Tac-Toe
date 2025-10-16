@@ -1,19 +1,24 @@
 {
-  "name": "react.dev",
-  "version": "0.0.0",
-  "main": "/src/index.js",
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "homepage": "https://zoi5161.github.io/Tic-Tac-Toe",
+  "private": true,
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-scripts": "^5.0.0"
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   },
-  "devDependencies": {},
   "browserslist": {
     "production": [
       ">0.2%",
